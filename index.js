@@ -6,6 +6,7 @@ async function printMetaData() {
     const mintAddress = process.argv[2] ? process.argv[2] : 'EPr4X3pqEMT7Eeu8YH9bt7uTD2PQ96rDP6NGU5PVoXaD';
     try {
         const rpcUrl= "https://api.mainnet-beta.solana.com";
+				
         const connection = new solanaWeb3.Connection(rpcUrl, 'confirmed');
     
         let mintPubkey = new solanaWeb3.PublicKey(mintAddress);
